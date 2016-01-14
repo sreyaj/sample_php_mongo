@@ -4,7 +4,7 @@ class ConnectToMongo {
   public function connect()
   {
     // Connect to the database and return the collection
-    $mongo = new Mongo('mongodb://localhost');
+    $mongo = new MongoClient('mongodb://localhost');
     $db = $mongo->selectDB('test');
     return $db->selectCollection('locations');
   }
