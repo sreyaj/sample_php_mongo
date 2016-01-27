@@ -4,7 +4,7 @@ build_image: drydock/u14phppls:tip
 php: 
   - 5.4
 
-services:
+services: 
   - mongodb
 before_script: 
   - mkdir -p shippable/testresults
